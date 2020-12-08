@@ -4,9 +4,42 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ohmyfood</title>
-        
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://kit.fontawesome.com/a799f61984.js"crossorigin="anonymous"></script>
     </head>
+<body>
+    <!--loading spinner-->
+    <div class="loadingspinner">
+        <svg viewbox="25 25 50 50">
+            <circle cx="50" cy="50" r="20"></circle>
+        </svg>  
+    </div>
 
+    <!--header-->
+<header>
+    <div class=logoheader>
+        <h1 class="logo">ohmyfood</h1>
+    </div>
+    <img src="images/logo/ohmyfood.png" alt="logoheader" />
+    <div class="localisation">
+        <form method="post" action="traitement.php">
+            <i class="fas fa-map-marcker-alt"></i>
+            <input type="search" name="localite" placeholder="Paris, Belleville" class="placeholder">
+        </form>
+</header>
+
+    <!--presentation-->
+<section class="presentation">
+    <h2>Réservez le menu qui vous convient</h2>
+    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+    <button><a href="#">Explorer nos restaurants</a></button>
+</section>
+
+
+
+
+
+</body>
 
 
 </html>
