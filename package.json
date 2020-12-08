@@ -1,0 +1,22 @@
+{
+  "name": "corinneroux_3_07122020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git+https://github.com/Korinne87/CorinneRoux_3_07122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Korinne87/CorinneRoux_3_07122020/issues"
+  },
+  "homepage": "https://github.com/Korinne87/CorinneRoux_3_07122020#readme",
+  "dependencies": {
+    "sass": "1.29.0"
+  }
+}
