@@ -14,7 +14,6 @@ html {
   transform-origin: center;
   animation: rotate 2s linear infinite;
   width: 10em;
-  animation: loader-end 2s 2s both;
 }
 .loadingspinner circle {
   fill: none;
@@ -42,6 +41,14 @@ html {
   100% {
     stroke-dasharray: -125px;
   }
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
