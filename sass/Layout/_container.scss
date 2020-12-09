@@ -1,0 +1,39 @@
+/**container localisation**/
+
+.localisation{
+    display: flex;
+    width: 100%;
+    background-color: $localcolor;
+    justify-content: center;
+    padding-bottom: 0.5em;
+    & form{
+        flex-direction: row;
+        padding-top: 0.5em;
+        text-align: center;
+     }
+     & input{
+        margin-left: 10px;
+        border: none;
+        background-color: $localcolor;
+        
+     }
+     & i {
+         display: inline-flex;
+         padding-top: 10px;
+         
+
+     }
+}
+.placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/**container presentation**/
+
+.presentation{
+    background-color: $presentationcolor;
+
+}
