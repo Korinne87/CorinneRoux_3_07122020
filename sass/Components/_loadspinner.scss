@@ -6,12 +6,11 @@
         transform-origin: center;
          animation: rotate 2s linear infinite;
          width: 10em;
-         animation: loader-end 2s 2s both;
          }
 
     circle{
     fill: none;
-    stroke: #9356DC;
+    stroke: $colorprimary;
     stroke-width: 2;
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
@@ -19,6 +18,10 @@
     animation: dash 1.5s ease-in-out infinite;
    }
 
+   .loadingspinnerend{
+        opacity: 1;
+        animation: loader-end 2s 2s both;
+   }
     @keyframes rotate{
     100% {
         transform: rotate(360deg);

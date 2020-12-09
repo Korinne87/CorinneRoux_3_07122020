@@ -8,25 +8,22 @@
         <script src="https://kit.fontawesome.com/a799f61984.js"crossorigin="anonymous"></script>
     </head>
 <body>
-    <!--loading spinner-->
-    <div class="loadingspinner">
-        <svg viewbox="25 25 50 50">
-            <circle cx="50" cy="50" r="20"></circle>
-        </svg>  
-    </div>
+  
 
     <!--header-->
 <header>
-    <div class=logoheader>
-        <h1 class="logo">ohmyfood</h1>
-    </div>
+    <figure>
     <img src="images/logo/ohmyfood.png" alt="logoheader" />
-    <div class="localisation">
-        <form method="post" action="traitement.php">
-            <i class="fas fa-map-marcker-alt"></i>
-            <input type="search" name="localite" placeholder="Paris, Belleville" class="placeholder">
-        </form>
+    </figure>
 </header>
+
+    <!--localisation-->
+<section class="localisation">
+    <i class="fas fa-map-marcker-alt"></i>
+    <form method="post" action="traitement.php">
+        <input type="search" name="localite" placeholder="Paris, Belleville" class="placeholder">
+    </form>
+
 
     <!--presentation-->
 <section class="presentation">
@@ -35,11 +32,51 @@
     <button><a href="#">Explorer nos restaurants</a></button>
 </section>
 
+    <!--fonctionnement-->
+<section class="fonctionnement">
+    <h2>Fonctionnement</h2>
+    <p><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+    <p><span>2</span><i class="fas fa-list"></i>Composez votre menu</p>
+    <p><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</p>
+</section>
 
+    <!--restaurants-->
+<section class="restaurants">
+    <h2>Restaurants</h2>
+    <article class="lapalettedugout">
 
+    </article>
 
+    <article class="lanoteenchantee">
+        
+    </article>
+
+    <article class="alafrancaise">
+
+    </article>
+
+    <article class="ledelicedessens">
+
+    </article>
+
+</section>
+
+<footer>
+    <h5>ohmyfood</h5>
+    <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+    <a href="#"><i class="far fa-handshake"></i>Devenir partenaire</a>
+    <a href="#">Mentions légales</a>
+    <a href="mailto:contact@ohmyfood.com">Contact</a>
+</footer>
 
 </body>
 
 
 </html>
+
+  <!--loading spinner--en attente>
+    <div class="loadingspinner">
+        <svg viewbox="25 25 50 50">
+            <circle cx="50" cy="50" r="20"></circle>
+        </svg>    
+    </div>
