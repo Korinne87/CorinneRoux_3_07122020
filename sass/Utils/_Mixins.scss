@@ -32,3 +32,13 @@
     box-shadow: -1px 1px 11px 5px rgba(0, 0, 0, .32);
     background-color: $colorfond;
 }
+
+@mixin photos{
+    justify-content: center;
+    border: 0 white solid;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 16px;
+    height: auto;
+    box-shadow: 2px 2px 8px 2px #AFAFB1;
+}
