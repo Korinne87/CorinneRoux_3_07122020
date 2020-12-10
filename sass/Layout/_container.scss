@@ -91,6 +91,8 @@
     @include photos;
     & a{
         text-decoration: none;
+        color: black;
+        margin-bottom: 0;
     }
     & img{
         object-fit: cover;
@@ -98,4 +100,11 @@
         height: auto;
         border-radius: 18px 18px 0 0 ;
     }
+    & h3{
+        margin-left: 5px;
+    }
+    & p{
+        margin-left: 5px;
+    }
+
 }    
