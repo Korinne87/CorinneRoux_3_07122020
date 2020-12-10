@@ -73,3 +73,17 @@
         }
     }
 }
+/**container restaurants**/
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: $presentationcolor;
+    margin-top: 30px;
+    & h2 {
+        @include choice;
+        padding-top: 16px;
+    }
+
+}

@@ -150,6 +150,22 @@ button a {
   font-size: 19px;
 }
 
+/**container restaurants**/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: #F6F6F6;
+  margin-top: 30px;
+}
+.restaurants h2 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 16px 16px 8px 16px;
+  padding-top: 16px;
+}
+
 header {
   text-align: center;
 }
