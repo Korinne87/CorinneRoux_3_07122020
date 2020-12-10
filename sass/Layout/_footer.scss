@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    & a{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: normal;
+    }
+   & h5{
+       color: white;
+   }
+}
+
+
