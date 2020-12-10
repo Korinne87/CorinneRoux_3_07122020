@@ -1,6 +1,14 @@
 html {
   overflow-x: hidden;
-  font-family: "robotoregular", Arial, sans-serif;
+  font-family: "robotoregular", "Arial", "sans-serif";
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
 }
 
 @font-face {
@@ -10,6 +18,24 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 1s;
+  border-style: none;
+  padding: 16px, 32px;
+  margin: 24px;
+  height: 35px;
+  outline: none;
+}
+button a {
+  color: #ffff;
+  text-decoration: none;
+}
+
 .loadingspinner svg {
   transform-origin: center;
   animation: rotate 2s linear infinite;
@@ -74,6 +100,8 @@ html {
 /**container presentation**/
 .presentation {
   background-color: #F6F6F6;
+  text-align: center;
+  font-weight: bold;
 }
 
 header {

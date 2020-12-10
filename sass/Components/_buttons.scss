@@ -1,0 +1,8 @@
+button{
+    @include button;
+    outline: none;
+    & a {
+        color: #ffff;
+        text-decoration: none;
+    }    
+}
