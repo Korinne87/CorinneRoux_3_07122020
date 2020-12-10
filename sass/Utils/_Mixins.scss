@@ -10,3 +10,25 @@
     margin: 24px;
     height: 35px;
 }
+
+@mixin choice {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 16px 16px 8px 16px;
+}
+@mixin number {
+    color: #ffffff;
+    border: 0 solid $colorprimary;
+    border-radius: 150%;
+    background-color: $colorprimary;
+    text-align: center;
+    padding: 6px 11px;
+    margin: 0 16px 0 -32px;
+}
+
+@mixin borderradius ($color: $colorborderradius){
+    border: 1px solid $color;
+    border-radius: 20px;
+    box-shadow: -1px 1px 11px 5px rgba(0, 0, 0, .32);
+    background-color: $colorfond;
+}
