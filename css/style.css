@@ -165,8 +165,7 @@ button a {
   margin: 16px 16px 8px 16px;
   padding-top: 16px;
 }
-
-.nomrestaurant {
+.restaurants-name {
   justify-content: center;
   border: 0 white solid;
   border-radius: 20px;
@@ -174,23 +173,51 @@ button a {
   margin: 16px;
   height: auto;
   box-shadow: 2px 2px 8px 2px #AFAFB1;
+  position: relative;
 }
-.nomrestaurant a {
+.restaurants-name a {
   text-decoration: none;
   color: black;
   margin-bottom: 0;
 }
-.nomrestaurant img {
+.restaurants-name img {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 175px;
   border-radius: 18px 18px 0 0;
 }
-.nomrestaurant h3 {
-  margin-left: 5px;
+.restaurants-name_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
 }
-.nomrestaurant p {
-  margin-left: 5px;
+.restaurants-name_description h3 {
+  font-weight: bold;
+}
+.restaurants-name .far.fa-heart {
+  position: absolute;
+  top: 190px;
+  left: 80%;
+  font-size: 21px;
+}
+.restaurants-name .far.fa-heart:hover {
+  font-size: 21px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  transition: all 2s linear 0s;
+}
+
+.restaurants-name_new {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: #99E2D0;
+  border: 1px solid #99E2D0;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+  color: #28967c;
+  padding: 3px 8px 3px 8px;
 }
 
 footer {

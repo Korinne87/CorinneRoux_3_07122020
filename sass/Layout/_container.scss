@@ -85,26 +85,49 @@
         @include choice;
         padding-top: 16px;
     }
+    &-name{
+        @include photos;
+        position: relative;
+        & a{
+            text-decoration: none;
+            color: black;
+            margin-bottom: 0;
+        }
+        & img{
+            object-fit: cover;
+            width: 100%;
+            height: 175px;
+            border-radius: 18px 18px 0 0 ;
+        }
+        &_description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 10px;
+            & h3 {
+                font-weight: bold;
+            }
+        }
+        .far.fa-heart{
+            position: absolute;
+            top: 190px;
+            left: 80%;
+            font-size: 21px;
+        } 
+        .far.fa-heart:hover{
+            font-size: 21px;
+            background: $colorbutton;
+            transition: all 2s linear 0s;
+        }
+        
+       
+     }
 }
 
-.nomrestaurant{
-    @include photos;
-    & a{
-        text-decoration: none;
-        color: black;
-        margin-bottom: 0;
-    }
-    & img{
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        border-radius: 18px 18px 0 0 ;
-    }
-    & h3{
-        margin-left: 5px;
-    }
-    & p{
-        margin-left: 5px;
-    }
+.restaurants-name_new{
+    @include new;
+}  
 
-}    
+
+
+

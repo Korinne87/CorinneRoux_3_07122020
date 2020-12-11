@@ -42,3 +42,16 @@
     height: auto;
     box-shadow: 2px 2px 8px 2px #AFAFB1;
 }
+
+@mixin new{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-color: $colortertiary;
+    border: 1px solid $colortertiary;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    color: #28967c;
+    padding: 3px 8px 3px 8px;
+}
