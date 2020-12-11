@@ -69,6 +69,7 @@ button a {
   }
 }
 
+/**page accueil**/
 /**container localisation**/
 .localisation {
   display: flex;
@@ -220,6 +221,7 @@ button a {
   padding: 3px 8px 3px 8px;
 }
 
+/**pages menus des restaurants**/
 footer {
   display: flex;
   flex-direction: column;
