@@ -229,9 +229,19 @@ footer a {
   color: #ffffff;
   text-decoration: none;
   font-weight: normal;
+  margin-left: 10px;
 }
 footer h5 {
   color: white;
+  margin-left: 15px;
+}
+footer .fas {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+footer .far {
+  margin-right: 5px;
+  margin-left: 10px;
 }
 
 header {
