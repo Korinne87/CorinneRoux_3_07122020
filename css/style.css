@@ -246,11 +246,36 @@ footer .far {
   margin-left: 10px;
 }
 
+/**header accueil**/
 header {
   text-align: center;
 }
 
 img {
+  height: 30px;
+}
+
+/**header pages menus resto**/
+.headerresto {
+  display: block;
+  text-align: start;
+}
+.headerresto a {
+  cursor: pointer;
+}
+.headerresto i {
+  display: inline-block;
+  position: absolute;
+  text-align: start;
+  font-weight: 900;
+  font-size: 24px;
+  margin-left: 20px;
+  color: black;
+}
+
+.headerlogo {
+  display: block;
+  text-align: center;
   height: 30px;
 }
 
