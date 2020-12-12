@@ -56,3 +56,13 @@
     padding: 3px 8px 3px 8px;
 }
 
+@mixin title{
+    font-family: 'shrikhand', 'Arial', 'sans-serif';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 28px;
+    margin: 13px 16px 8px 16px;
+    
+}
+

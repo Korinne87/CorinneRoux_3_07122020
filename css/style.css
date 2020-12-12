@@ -1,6 +1,13 @@
 html {
   overflow-x: hidden;
-  font-family: "robotoregular", "Arial", "sans-serif";
+}
+
+section h1 {
+  font-family: "Shrikhand", "Arial", "sans-serif";
+}
+
+section h2, h3, h4, p {
+  font-family: "roboto", "Arial", "sans-serif";
 }
 
 h2 {
@@ -13,8 +20,8 @@ p {
 
 @font-face {
   font-family: "robotoregular";
-  src: url("police/roboto-fontfacekit/web fonts/Roboto-Regular-webfont.eot");
-  src: url("police/roboto-fontfacekit/web fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("police/roboto-fontfacekit/web fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("police/roboto-fontfacekit/web fonts/Roboto-Regular-webfont.woff") format("woff"), url("police/roboto-fontfacekit/web fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("police/roboto-fontfacekit/web fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot");
+  src: url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2") format("woff2"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf") format("truetype"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -222,6 +229,28 @@ button a {
 }
 
 /**pages menus des restaurants**/
+.photoplat {
+  margin: 0;
+}
+.photoplat img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.restotitle {
+  font-family: "shrikhand", "Arial", "sans-serif";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 28px;
+  margin: 13px 16px 8px 16px;
+}
+.restotitle h2 {
+  margin: 3px 0;
+  width: 80%;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -235,6 +264,7 @@ footer a {
 }
 footer h5 {
   color: white;
+  font-family: "Shrikhand", "Arial", "sans-serif";
   margin-left: 15px;
 }
 footer .fas {
