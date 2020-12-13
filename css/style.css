@@ -1,3 +1,29 @@
+@keyframes anim-button {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+    opcacity: 0.9;
+  }
+}
+@keyframes valid {
+  0% {
+    margin-right: -67px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@keyframes i-rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   overflow-x: hidden;
 }
@@ -38,7 +64,11 @@ button {
   height: 35px;
   outline: none;
 }
-button a {
+button:hover {
+  animation: anim-button 0.3s both;
+}
+
+.btn {
   color: #ffff;
   text-decoration: none;
 }
@@ -295,6 +325,7 @@ button a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  height: 90px;
   cursor: pointer;
 }
 .menu-plat:hover .validation {

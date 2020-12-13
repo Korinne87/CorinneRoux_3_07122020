@@ -1,8 +1,16 @@
 button{
     @include button;
     outline: none;
-    & a {
-        color: #ffff;
-        text-decoration: none;
-    }    
+    &:hover
+    {
+        animation: anim-button 0.3s both;
+
+    }
 }
+.btn
+{
+    color: #ffff;
+    text-decoration: none;
+    
+}  
+

@@ -179,6 +179,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    height: 90px;
     cursor: pointer;
     &:hover .validation {
         animation: valid 2500ms both;
