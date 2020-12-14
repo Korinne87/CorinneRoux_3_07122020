@@ -44,13 +44,6 @@ p {
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "robotoregular";
-  src: url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot");
-  src: url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2") format("woff2"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf") format("truetype"), url("police/roboto-fontfacekit/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 button {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
@@ -325,7 +318,7 @@ button:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  height: 90px;
+  height: 68px;
   cursor: pointer;
 }
 .menu-plat:hover .validation {
@@ -374,7 +367,8 @@ button:hover {
 .menu-plat_tarif {
   font-weight: 800;
   font-size: 19px;
-  margin-right: 30px;
+  margin-right: 40px;
+  padding-top: 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -385,16 +379,23 @@ button:hover {
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
   height: 100%;
+  width: 60px;
+  margin-top: -25px;
+  padding-top: 25px;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu-plat_check .far.fa-check-circle {
   text-align: center;
-  color: white;
+  margin-top: 15px;
+  margin-right: 15px;
+  color: #99E2D0;
+  background-color: white;
   transform-origin: 50% 60%;
+  border-radius: 50%;
 }
 
 footer {
