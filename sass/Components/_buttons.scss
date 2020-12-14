@@ -1,4 +1,8 @@
-button{
+
+.btn
+{
+    color: #ffff;
+    text-decoration: none;
     @include button;
     outline: none;
     &:hover
@@ -6,11 +10,5 @@ button{
         animation: anim-button 0.3s both;
 
     }
-}
-.btn
-{
-    color: #ffff;
-    text-decoration: none;
-    
 }  
 

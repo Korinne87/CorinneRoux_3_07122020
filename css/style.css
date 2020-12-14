@@ -5,7 +5,7 @@
   }
   100% {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
-    opcacity: 0.9;
+    opacity: 0.9;
   }
 }
 @keyframes valid {
@@ -28,6 +28,11 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 section h1 {
   font-family: "Shrikhand", "Arial", "sans-serif";
 }
@@ -44,7 +49,9 @@ p {
   font-weight: normal;
 }
 
-button {
+.btn {
+  color: #ffff;
+  text-decoration: none;
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   text-align: center;
@@ -52,18 +59,13 @@ button {
   cursor: pointer;
   transition: color 1s;
   border-style: none;
-  padding: 16px, 32px;
+  padding: 16px 32px;
   margin: 24px;
-  height: 35px;
+  height: 48px;
   outline: none;
 }
-button:hover {
+.btn:hover {
   animation: anim-button 0.3s both;
-}
-
-.btn {
-  color: #ffff;
-  text-decoration: none;
 }
 
 .loadingspinner svg {
@@ -321,10 +323,10 @@ button:hover {
   height: 68px;
   cursor: pointer;
 }
-.menu-plat:hover .validation {
+.menu-plat:active .validation {
   animation: valid 2500ms both;
 }
-.menu-plat:hover .validation .far.fa-check-circle {
+.menu-plat:active .validation .far.fa-check-circle {
   animation: i-rotate 1500ms 500ms both;
 }
 
@@ -336,6 +338,12 @@ button:hover {
   margin-right: -67px;
   position: relative;
   z-index: 2;
+}
+.validation button:active {
+  animation: valid 2500ms both;
+}
+.validation button:active .far.fa-check-circle {
+  animation: i-rotate 1500ms 500ms both;
 }
 
 .menu-plat_name {
@@ -367,7 +375,7 @@ button:hover {
 .menu-plat_tarif {
   font-weight: 800;
   font-size: 19px;
-  margin-right: 40px;
+  margin-right: 20px;
   padding-top: 10px;
   overflow: hidden;
   white-space: nowrap;
@@ -378,11 +386,9 @@ button:hover {
 .menu-plat_check {
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
-  height: 100%;
   width: 60px;
   margin-top: -25px;
   padding-top: 25px;
-  font-weight: 800;
   font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
@@ -390,8 +396,6 @@ button:hover {
 }
 .menu-plat_check .far.fa-check-circle {
   text-align: center;
-  margin-top: 15px;
-  margin-right: 15px;
   color: #99E2D0;
   background-color: white;
   transform-origin: 50% 60%;
