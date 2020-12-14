@@ -68,6 +68,10 @@ p {
   animation: anim-button 0.3s both;
 }
 
+.command {
+  text-align: center;
+}
+
 .loadingspinner svg {
   transform-origin: center;
   animation: rotate 2s linear infinite;
