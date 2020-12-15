@@ -26,3 +26,16 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes apparitionprog{
+    0%{
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
+    100%{
+        opcacity: 1;
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+}

@@ -8,7 +8,7 @@
     &:hover
     {
         animation: anim-button 0.3s both;
-
+        background: linear-gradient(lighten($colorsecondary, 4), lighten($colorprimary, 4));
     }
 }  
 

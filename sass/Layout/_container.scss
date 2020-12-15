@@ -177,6 +177,9 @@
 
 .restocoeur{
     margin-top: 40px;
+    .far.fa-heart{
+    @include coeur;
+    }
 }
 
 
@@ -273,5 +276,13 @@
         background-color: white;
         transform-origin: 50% 60%;
         border-radius: 50%;
+    }
+}
+
+.arriveepage{
+    opacity: 1;
+    animation: apparitionprog 3000ms both;
+    & .menu-plat {
+        animation-delay: 500ms;
     }
 }
