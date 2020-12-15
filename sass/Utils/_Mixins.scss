@@ -29,9 +29,11 @@
 @mixin borderradius ($color: $colorborderradius){
     border: 1px solid $color;
     border-radius: 20px;
-    box-shadow: -1px 1px 11px 5px rgba(0, 0, 0, .32);
+    box-shadow: 2px 2px 8px 2px #AFAFB1;
     background-color: $colorfond;
 }
+
+
 
 @mixin photos{
     justify-content: center;
@@ -63,7 +65,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 13px 16px 8px 16px;
+    margin: 0px 16px 0px 16px;
     
 }
 
@@ -83,4 +85,27 @@
     box-shadow: 2px 2px 8px 2px #AFAFB1;
     margin: 16px 0px 0px 0px;
     padding: 13px 0 0 13px;
+}
+
+@mixin coeur {
+   color: black;
+   cursor: pointer;
+   font-weight: bold;
+   background-size: auto 0%;
+   background-repeat: no-repeat;
+   -webkit-text-stroke-width: 1px;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 600ms;
+    &:hover{
+        color: -webkit-linear-gradient(235deg,$colorprimary,$colorsecondary);
+        background:  -webkit-linear-gradient(235deg,$colorprimary,$colorsecondary);
+        color: #5f5f5f;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        -webkit-text-stroke-width: thin;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+    }
 }

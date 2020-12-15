@@ -22,8 +22,7 @@
      & i {
          display: inline-flex;
          padding-top: 10px;
-         
-
+         margin-left: 25px;
      }
 }
 .placeholder{
@@ -39,6 +38,15 @@
     background-color: $presentationcolor;
     text-align: center;
     font-weight: bold;
+    & p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+    & h2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 /**container fonctionnement**/
@@ -98,7 +106,7 @@
         & img{
             object-fit: cover;
             width: 100%;
-            height: 175px;
+            height: 160px;
             border-radius: 18px 18px 0 0 ;
         }
         &_description{
@@ -108,19 +116,21 @@
             margin-left: 10px;
             & h3 {
                 font-weight: bold;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+            & p{
+                margin-top: 5px;
             }
         }
         .far.fa-heart{
             position: absolute;
-            top: 190px;
+            top: 180px;
             left: 80%;
             font-size: 21px;
+            @include coeur;
         } 
-        .far.fa-heart:hover{
-            font-size: 21px;
-            background: $colorbutton;
-            transition: all 2s linear 0s;
-        }
+        
         
        
      }
@@ -149,6 +159,9 @@
         margin: 3px 0;
         width: 80%;
     }
+    & h1{
+        margin-bottom: 0px;
+    }
 }
 .restomenu{
     position: relative;
@@ -157,6 +170,7 @@
     & h3{
         font-size: 19px;
         margin-bottom: 8px;
+        margin-top: 50px;
         font-weight: 400;
     }   
 }    
@@ -164,6 +178,8 @@
 .restocoeur{
     margin-top: 40px;
 }
+
+
 .trait {
     border: 2px solid $colortertiary;
     width: 48px;

@@ -31,6 +31,7 @@ html {
 body {
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 section h1 {
@@ -101,7 +102,7 @@ p {
     stroke-dashoffset: -35px;
   }
   100% {
-    stroke-dasharray: -125px;
+    stroke-dasharray: 0px;
   }
 }
 
@@ -127,6 +128,7 @@ p {
 .localisation i {
   display: inline-flex;
   padding-top: 10px;
+  margin-left: 25px;
 }
 
 .placeholder {
@@ -139,6 +141,15 @@ p {
   background-color: #F6F6F6;
   text-align: center;
   font-weight: bold;
+}
+.presentation p {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.presentation h2 {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /**container fonctionnement**/
@@ -169,7 +180,7 @@ p {
   font-weight: bold;
   border: 1px solid #F4F4F5;
   border-radius: 20px;
-  box-shadow: -1px 1px 11px 5px rgba(0, 0, 0, 0.32);
+  box-shadow: 2px 2px 8px 2px #AFAFB1;
   background-color: #F6F6F6;
   margin: 16px;
   padding: 16px;
@@ -220,7 +231,7 @@ p {
 .restaurants-name img {
   object-fit: cover;
   width: 100%;
-  height: 175px;
+  height: 160px;
   border-radius: 18px 18px 0 0;
 }
 .restaurants-name_description {
@@ -231,17 +242,36 @@ p {
 }
 .restaurants-name_description h3 {
   font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.restaurants-name_description p {
+  margin-top: 5px;
 }
 .restaurants-name .far.fa-heart {
   position: absolute;
-  top: 190px;
+  top: 180px;
   left: 80%;
   font-size: 21px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  background-size: auto 0%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 600ms;
 }
 .restaurants-name .far.fa-heart:hover {
-  font-size: 21px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  transition: all 2s linear 0s;
+  color: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
+  color: #5f5f5f;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .restaurants-name_new {
@@ -274,12 +304,15 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 13px 16px 8px 16px;
+  margin: 0px 16px 0px 16px;
   white-space: normal;
 }
 .restotitle h2 {
   margin: 3px 0;
   width: 80%;
+}
+.restotitle h1 {
+  margin-bottom: 0px;
 }
 
 .restomenu {
@@ -295,6 +328,7 @@ p {
 .restomenu h3 {
   font-size: 19px;
   margin-bottom: 8px;
+  margin-top: 50px;
   font-weight: 400;
 }
 
@@ -410,25 +444,28 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
+  padding-bottom: 30px;
 }
 footer a {
   color: #ffffff;
   text-decoration: none;
   font-weight: normal;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 footer h5 {
   color: white;
   font-family: "Shrikhand", "Arial", "sans-serif";
   margin-left: 15px;
+  font-weight: normal;
 }
 footer .fas {
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 footer .far {
-  margin-right: 5px;
-  margin-left: 10px;
+  margin-right: 10px;
+  margin-left: 0px;
 }
 
 /**header accueil**/
