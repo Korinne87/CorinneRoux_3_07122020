@@ -129,6 +129,7 @@
             left: 80%;
             font-size: 21px;
             @include coeur;
+            text-rendering: optimizeLegibility;
         } 
         
         
@@ -178,9 +179,10 @@
 .restocoeur{
     margin-top: 40px;
     .far.fa-heart{
-    @include coeur;
+        @include coeur;
     }
 }
+
 
 
 .trait {
@@ -204,6 +206,7 @@
         animation: valid 2500ms both;
         & .far.fa-check-circle {
             animation: i-rotate 1500ms 500ms both;
+            text-rendering: optimizeLegibility;
         }
     }
 }
