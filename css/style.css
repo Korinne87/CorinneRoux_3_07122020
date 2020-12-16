@@ -465,6 +465,15 @@ p {
   animation: i-rotate 1500ms 500ms both;
   text-rendering: optimizeLegibility;
 }
+@media screen and (min-width: 992px) {
+  .menu-plat:hover .validation {
+    animation: valid 2500ms both;
+  }
+  .menu-plat:hover .validation .far.fa-check-circle {
+    animation: i-rotate 1500ms 500ms both;
+    text-rendering: optimizeLegibility;
+  }
+}
 
 .validation {
   display: flex;
