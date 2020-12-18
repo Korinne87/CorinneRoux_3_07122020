@@ -344,6 +344,11 @@ p {
   width: 100%;
   height: 250px;
 }
+@media screen and (min-width: 768px) {
+  .photoplat img {
+    height: 400px;
+  }
+}
 
 .restotitle {
   font-family: "shrikhand", "Arial", "sans-serif";
