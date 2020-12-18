@@ -297,11 +297,10 @@
 .menu-plat_check {
     border: 1px solid $colortertiary;
     background-color: $colortertiary;
-    width: 60px;
+    width: 65px;
     margin-top: -25px;
     padding-top: 25px;
     font-size: 30px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     & .far.fa-check-circle {

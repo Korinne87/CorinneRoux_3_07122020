@@ -503,11 +503,10 @@ p {
 .menu-plat_check {
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
-  width: 60px;
+  width: 65px;
   margin-top: -25px;
   padding-top: 25px;
   font-size: 30px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -596,7 +595,10 @@ header h1 {
 .headerlogo {
   display: block;
   text-align: center;
+}
+.headerlogo h1 {
   height: 30px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {

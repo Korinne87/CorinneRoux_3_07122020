@@ -28,5 +28,8 @@ header h1{
 .headerlogo{
     display: block;
         text-align: center;
+    & h1{
         height: 30px;
+        font-size: 30px;
+    }    
 }
