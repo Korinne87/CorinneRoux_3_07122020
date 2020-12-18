@@ -186,6 +186,16 @@
         margin-bottom: 0px;
     }
 }
+
+.menu {
+    @media  screen and (min-width:768px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
 .restomenu{
     position: relative;
     @include restomenu;
@@ -230,6 +240,9 @@
             animation: i-rotate 1500ms 500ms both;
             text-rendering: optimizeLegibility;
         }
+    }
+    @media screen and (min-width:768px){
+        width: 400px;
     }
     @media screen and (min-width:992px){
         &:hover .validation {
@@ -303,6 +316,7 @@
     font-size: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     & .far.fa-check-circle {
         text-align: center;
         color: $colortertiary;
