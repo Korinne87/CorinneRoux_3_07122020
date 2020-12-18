@@ -66,64 +66,6 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .restaurantcontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .restaurantcontainer .restaurants-name {
-    min-width: 250px;
-  }
-
-  .restaurants-name .far.fa-heart {
-    margin-top: 30px;
-  }
-
-  footer h5 {
-    display: flex;
-    justify-content: center;
-  }
-  footer a {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 992px) {
-  .restaurantcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .restaurantcontainer .restaurants-name {
-    min-width: 200px;
-  }
-
-  .restaurants-name .far.fa-heart {
-    margin-top: 30px;
-  }
-
-  .fonctionnement {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .fonctionnement h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  footer h5 {
-    display: flex;
-    justify-content: center;
-  }
-  footer a {
-    display: flex;
-    justify-content: center;
-  }
-}
 .btn {
   color: #ffff;
   text-decoration: none;
@@ -235,10 +177,24 @@ p {
   margin-top: 16px;
   margin-left: 13px;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .fonctionnement h2 {
   font-size: 21px;
   font-weight: bold;
   margin: 16px 16px 8px 16px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .fonctionnement span {
   color: #ffffff;
@@ -349,7 +305,23 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+@media screen and (min-width: 768px) {
+  .restaurants-name .far.fa-heart {
+    margin-top: 30px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .restaurantcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .restaurantcontainer .restaurants-name {
+    width: 250px;
+  }
+}
 .restaurants-name_new {
   position: absolute;
   right: 16px;
@@ -568,11 +540,23 @@ footer a {
   margin-left: 10px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  footer a {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer h5 {
   color: white;
   font-family: "Shrikhand", "Arial", "sans-serif";
   margin-left: 15px;
   font-weight: normal;
+}
+@media screen and (min-width: 768px) {
+  footer h5 {
+    display: flex;
+    justify-content: center;
+  }
 }
 footer .fas {
   margin-right: 10px;
@@ -584,12 +568,11 @@ footer .far {
 }
 
 /**header accueil**/
-header {
-  text-align: center;
-}
-
-img {
+header h1 {
   height: 30px;
+  text-align: center;
+  font-family: "Shrikhand", "Arial", "sans-serif";
+  font-weight: normal;
 }
 
 /**header pages menus resto**/

@@ -56,8 +56,18 @@
     justify-content: center;
     margin-top: 16px;
     margin-left: 13px;
+    @media  screen and (min-width:768px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     & h2 {
         @include choice;
+        @media  screen and (min-width:768px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     } 
     & span {
         @include number;
@@ -98,6 +108,7 @@
     &-name{
         @include photos;
         position: relative;
+
         & a{
             text-decoration: none;
             color: black;
@@ -130,13 +141,24 @@
             font-size: 21px;
             @include coeur;
             text-rendering: optimizeLegibility;
-        } 
-        
-        
-       
+            @media  screen and (min-width:768px) {
+                margin-top: 30px;
+            } 
+        }   
      }
 }
 
+@media  screen and (min-width:768px){
+    .restaurantcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        & .restaurants-name{
+            width: 250px;
+        }  
+    }
+ }
 .restaurants-name_new{
     @include new;
 }  

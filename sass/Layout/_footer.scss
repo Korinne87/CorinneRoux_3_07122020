@@ -9,12 +9,20 @@ footer{
         font-weight: normal;
         margin-left: 10px;
         margin-bottom: 10px;
+        @media  screen and (min-width:768px){
+            display: flex;
+            justify-content: center;
+        }
     }
    & h5{
        color: white;
        font-family: 'Shrikhand', 'Arial', 'sans-serif';
        margin-left: 15px;
        font-weight: normal;
+       @media  screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+       }
    }
    .fas{
        margin-right: 10px;

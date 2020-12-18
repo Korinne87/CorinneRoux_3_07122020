@@ -33,76 +33,7 @@ text-rendering: optimizeLegibility;
 }
 
 
-@media  screen and (min-width:768px) and (max-width:991px){
-    .restaurantcontainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        & .restaurants-name{
-            min-width: 250px;
-        } 
-        
-    }
-    .restaurants-name{
-        .far.fa-heart{
-        margin-top: 30px;
-        
-        }
-    }
-   
 
-    footer{
-        & h5{
-            display: flex;
-            justify-content: center;
-        }
-        & a{
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-
-}
-@media  screen and (min-width:992px) {
-    .restaurantcontainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        & .restaurants-name{
-            min-width: 200px;
-          
-            
-        }
-    }
-    .restaurants-name{
-        .far.fa-heart{
-        margin-top: 30px;
-        
-        }
-    }
-    .fonctionnement{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        & h2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    footer{
-        & h5{
-            display: flex;
-            justify-content: center;
-        }
-        & a{
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
+    
 
     
