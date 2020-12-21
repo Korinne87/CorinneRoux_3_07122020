@@ -90,37 +90,46 @@ p {
   text-align: center;
 }
 
-.loadingspinner svg {
-  transform-origin: center;
-  animation: rotate 2s linear infinite;
-  width: 10em;
+@keyframes load {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-9999px);
+  }
 }
-.loadingspinner circle {
-  fill: none;
-  stroke: #9356DC;
-  stroke-width: 2;
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  stroke-linecap: round;
-  animation: dash 1.5s ease-in-out infinite;
-}
-@keyframes rotate {
-  100% {
+@keyframes spinner {
+  to {
     transform: rotate(360deg);
   }
 }
-@keyframes dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
+.load {
+  width: 25vw;
+  height: 25vw;
+  display: inline-block;
+  border: 6px solid #9356DC;
+  border-top-color: white;
+  border-radius: 50%;
+  margin-top: 40vh;
+  animation: spinner 3s ease-in-out infinite;
+}
+@media screen and (min-width: 992px) {
+  .load {
+    width: 15vw;
+    height: 15vw;
   }
-  50% {
-    stroke-dasharray: 90, 200;
-    stroke-dashoffset: -35px;
-  }
-  100% {
-    stroke-dasharray: 0px;
-  }
+}
+.load_spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  animation: load 1ms 2s ease-in-out;
+  animation-fill-mode: both;
+  z-index: 1;
 }
 
 /**page accueil**/
